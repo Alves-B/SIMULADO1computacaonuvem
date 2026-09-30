@@ -1,0 +1,17 @@
+cat> index.html <<'EOF'
+<!DOCTYPE html>
+<html lang ="pt-BR">
+<head>
+<meta charset=UTF-8">
+<title>Pedidos</title>
+</head>
+<body>
+<h1>Pedidos em funcionamento</h1>
+</body>
+</html>
+EOF
+
+docker run -d --name pedidos -p 8084:80 nginx:alpine
+docker cp inde x.html pedidos:/usr/share/nginx/html/index.html
+docker ps
+curl http://localhost:8084
