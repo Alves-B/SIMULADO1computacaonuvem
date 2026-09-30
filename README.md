@@ -1,1 +1,12 @@
-# SIMULADO1computacaonuvem
+cat> index.html <<'EOF'
+<!DOCTYPE html>
+<html lang ="pt-BR">
+<head>
+<meta charset=UTF-8">
+<title>Pedidos</title>
+</head>
+<body>
+<h1>Pedidos em funcionamento</h1>
+</body>
+</html>
+EOF
